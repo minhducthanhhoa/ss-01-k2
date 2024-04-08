@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function filterPositiveIntegers(arr) {
+            var filteredArray = arr.filter(function(element) {
+                return typeof element === 'number' && element > 0;
+            });
+            return filteredArray;
+        }
+
+        var inputArray = [1, 2, 'z', true, -1, -3];
+
+        var outputArray = filterPositiveIntegers(inputArray);
+
+        console.log(outputArray); 
+    </script>
+</body>
+</html>
